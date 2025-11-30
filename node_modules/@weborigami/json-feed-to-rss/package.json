@@ -1,0 +1,6 @@
+{
+  "name": "@weborigami/json-feed-to-rss",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/jsonFeedToRss.js"
+}

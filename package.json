@@ -1,0 +1,29 @@
+{
+  "name": "adityablog",
+  "version": "1.0.0",
+  "description": "Aditya's personal blog",
+  "main": "adityabuild.js",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@weborigami/origami": "0.4.2",
+    "@weborigami/pagefind": "0.0.12",
+    "highlight.js": "^11.4.0",
+    "html-minifier": "^4.0.0",
+    "html-validate": "^7.3.3",
+    "marked": "^4.0.12",
+    "psl": "^1.8.0"
+  },
+  "scripts": {
+    "build-origami": "node adityabuild.js",
+    "build-minify": "html-minifier --input-dir ./build --output-dir ./build --collapse-whitespace --use-short-doctype --minify-css true --minify-js true",
+    "build": "npm run build-origami && npm run build-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditya/AdityaBlog.git"
+  },
+  "author": "Aditya",
+  "license": "MIT",
+  "homepage": ""
+}

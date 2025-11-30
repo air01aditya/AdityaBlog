@@ -1,0 +1,20 @@
+import { html } from "../server/utils.js";
+import { PostsList } from "../server/PostsList.js";
+
+export async function html() {
+  const posts = this.posts || [];
+
+  return html`<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdityaBlog</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>AdityaBlog</h1>
+    ${PostsList({ posts })}
+  </body>
+</html>`;
+}
